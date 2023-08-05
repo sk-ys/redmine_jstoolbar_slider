@@ -1,0 +1,42 @@
+@media screen and (max-width: 899px) {
+  #content .jstTabs {
+    width: 100%;
+  }
+}
+#content .jstTabs.tabs ul {
+  min-width: unset;
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+}
+#content .jstTabs.tabs ul > li {
+  flex: 0 0 auto;
+}
+#content .jstTabs.tabs ul > li.tab-elements {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+#content .jstTabs.tabs .slider-buttons {
+  padding-right: 0;
+  padding-left: 0;
+}
+#content .jstTabs.tabs .slider-buttons button {
+  position: static;
+}
+div.jstElements button.shift-left,
+div.jstElements button.shift-right {
+  right: 28px;
+  border-top-left-radius: 3px;
+  background-color: #eee;
+}
+div.jstElements button.shift-left {
+  background: url(../../../images/arrow_left.png) no-repeat 50% 50% !important;
+}
+div.jstElements button.shift-right {
+  background: url(../../../images/arrow_right.png) no-repeat 50% 50% !important;
+}
+div.jstElements.slider-buttons.at-the-left button.shift-left,
+div.jstElements.slider-buttons.at-the-right button.shift-right {
+  background-color: #ccc !important;
+  opacity: 1;
+}
