@@ -125,9 +125,6 @@
       changeSliderButtonsVisibility($sliderButtons);
     }).observe($tabsBlock.find("li.tab-elements")[0]);
 
-    // Initial application
-    setTimeout(changeSliderButtonsVisibility($sliderButtons));
-
     // Set event to tabs buttons
     $tabsBlock.find("a.tab-edit, a.tab-preview").on("click", () => {
       setTimeout(() => {
