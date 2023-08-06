@@ -57,6 +57,11 @@
     const $sliderButtons = $(sliderButtons);
     const tabElements = $sliderButtons.closest("ul").find("li.tab-elements")[0];
 
+    if ($(tabElements).find(".jstElements.hidden").length > 0) {
+      $sliderButtons.hide();
+      return;
+    }
+
     function isOverFlow() {
       return (
         tabElements.offsetWidth <
@@ -122,6 +127,13 @@
 
     // Initial application
     setTimeout(changeSliderButtonsVisibility($sliderButtons));
+
+    // Set event to tabs buttons
+    $tabsBlock.find("a.tab-edit, a.tab-preview").on("click", () => {
+      setTimeout(() => {
+        changeSliderButtonsVisibility($sliderButtons);
+      });
+    });
   }
 
   // Trigger to initialize the jsToolBar Slider
