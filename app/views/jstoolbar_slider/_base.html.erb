@@ -1,14 +1,4 @@
 <% content_for :header_tags do %>
-  <script>
-    var JstoolbarSlider = {
-      config: {
-        resources: {
-          labelUndo: "<%= l(:jstoolbar_slider_label_undo) %>",
-          labelRedo: "<%= l(:jstoolbar_slider_label_redo) %>",
-        }
-      }
-    }
-  </script>
   <%= javascript_include_tag "jstoolbar_slider", plugin: "redmine_jstoolbar_slider" %>
   <%= stylesheet_link_tag "jstoolbar_slider", plugin: "redmine_jstoolbar_slider" %>
 <% end %>
