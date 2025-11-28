@@ -26,14 +26,17 @@
 div.jstElements button.shift-left,
 div.jstElements button.shift-right {
   right: 28px;
-  border-top-left-radius: 3px;
   background-color: #eee;
 }
 div.jstElements button.shift-left {
   background: url(../../../images/arrow_left.png) no-repeat 50% 50% !important;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 div.jstElements button.shift-right {
   background: url(../../../images/arrow_right.png) no-repeat 50% 50% !important;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 div.jstElements.slider-buttons.at-the-left button.shift-left,
 div.jstElements.slider-buttons.at-the-right button.shift-right {
