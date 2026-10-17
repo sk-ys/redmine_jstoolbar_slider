@@ -10,8 +10,9 @@ sliding the toolbar buttons when the toolbar is overflowing.
 
 ## Compatibility
 
-Only Redmine v5.0.5 has been tested.  
-Other versions are untested.
+The original release was tested with Redmine v5.0.5. The arrow icons are embedded SVGs, so they do not depend on core image paths or the asset pipeline layout.
+
+Local checks on Redmine 7.0.2 / Rails 8.1.4 covered asset compilation, toolbar scrolling, preview/edit switching, and dynamically created editors at desktop and mobile widths. These checks used Ruby 4.0.7 and SQLite; they do not establish compatibility with every deployment or theme.
 
 ## Installation
 
