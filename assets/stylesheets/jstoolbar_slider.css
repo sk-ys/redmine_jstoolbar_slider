@@ -41,5 +41,5 @@ div.jstElements button.shift-right {
 div.jstElements.slider-buttons.at-the-left button.shift-left,
 div.jstElements.slider-buttons.at-the-right button.shift-right {
   background-color: #ccc !important;
-  opacity: 1;
+  opacity: 0.3;
 }
